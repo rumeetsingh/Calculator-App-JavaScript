@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/icons/favicon.png">
+    <link rel="icon" sizes="192x192" href="assets/icons/icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Calculator</title>
+  </head>
+  <body>
+
+    <div class="container mt-4">
+      <div class="card">
+          <div class="card-header text-center">
+            Calculator
+          </div>
+          <div class="card-body">
+
+            <!-- Result Card -->
+            <div class="alert alert-info text-right" id="result" role="alert">
+              0
+            </div>
+
+            <!-- Input -->
+            <input class="form-control form-control-lg mb-4" id="input" type="text">
+
+              <div class="form-row mb-3">
+                <div class="col">
+                    <button type="button" id="open" class="btn btn-outline-primary btn-lg form-control rounded-pill">(</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="close" class="btn btn-outline-primary btn-lg form-control rounded-pill">)</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="mod" class="btn btn-info btn-lg form-control rounded-pill">%</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="ac" class="btn btn-danger btn-lg form-control rounded-pill">AC</button>
+                </div>
+              </div>
+
+              <div class="form-row mb-3">
+                <div class="col">
+                    <button type="button" id="seven" class="btn btn-outline-primary btn-lg form-control rounded-pill">7</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="eight" class="btn btn-outline-primary btn-lg form-control rounded-pill">8</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="nine" class="btn btn-outline-primary btn-lg form-control rounded-pill">9</button>
+                </div>
+                <div class="col">
+                    <button type="button" id="divide" class="btn btn-info btn-lg form-control rounded-pill">÷</button>
+                </div>
+              </div>
+
+              <div class="form-row mb-3">
+                  <div class="col">
+                      <button type="button" id="four" class="btn btn-outline-primary btn-lg form-control rounded-pill">4</button>
+                  </div>
+                  <div class="col">
+                      <button type="button" id="five" class="btn btn-outline-primary btn-lg form-control rounded-pill">5</button>
+                  </div>
+                  <div class="col">
+                      <button type="button" id="six" class="btn btn-outline-primary btn-lg form-control rounded-pill">6</button>
+                  </div>
+                  <div class="col">
+                      <button type="button" id="multiply" class="btn btn-info btn-lg form-control rounded-pill">×</button>
+                  </div>
+                </div>
+
+                <div class="form-row mb-3">
+                    <div class="col">
+                        <button type="button" id="one" class="btn btn-outline-primary btn-lg form-control rounded-pill">1</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="two" class="btn btn-outline-primary btn-lg form-control rounded-pill">2</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="three" class="btn btn-outline-primary btn-lg form-control rounded-pill">3</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="minus" class="btn btn-info btn-lg form-control rounded-pill">-</button>
+                    </div>
+                  </div>
+
+                  <div class="form-row mb-4">
+                      <div class="col">
+                          <button type="button" id="zero" class="btn btn-outline-primary btn-lg form-control rounded-pill">0</button>
+                      </div>
+                      <div class="col">
+                          <button type="button" id="point" class="btn btn-outline-primary btn-lg form-control rounded-pill">.</button>
+                      </div>
+                      <div class="col">
+                          <button type="button" id="equal" class="btn btn-success btn-lg form-control rounded-pill">=</button>
+                      </div>
+                      <div class="col">
+                          <button type="button" id="plus" class="btn btn-info btn-lg form-control rounded-pill">+</button>
+                      </div>
+                    </div>
+
+          </div>
+          <div class="card-footer text-muted text-center">
+              <small>Made with <i class="fas fa-heart" style="color:red;"></i> by <a href="https://github.com/rumeetsingh" target="_blank">Rumeet Singh</a></small>
+            </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
