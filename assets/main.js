@@ -1,4 +1,3 @@
-let btn = document.getElementById('my_btn');
 let result = document.getElementById('result');
 let input = document.getElementById('input');
 let main_input = "";
