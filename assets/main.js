@@ -4,6 +4,7 @@ let input = document.getElementById('input');
 let main_input = "";
 
 let ac = document.getElementById("ac");
+let back = document.getElementById("back");
 
 let open = document.getElementById("open");
 let close = document.getElementById("close");
@@ -37,6 +38,11 @@ input.addEventListener('input',(ev)=>{
 ac.addEventListener('click',()=>{
     main_input = "";
     result.innerHTML = 0;
+    input.value = main_input;
+})
+
+back.addEventListener('click',()=>{
+    main_input = main_input.slice(0, -1);
     input.value = main_input;
 })
 
